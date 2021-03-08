@@ -38,6 +38,15 @@ export class EventDataService {
       );
   }
 
+  delete(event: Event): Observable<any>{
+    return this.http
+      .delete(`events/${event.id}`)
+      .pipe(
+        catchError(this.handleError)
+      );
+  }
+  
+
   update(event: Event): Observable<any>{
     return this.http
       .put(`events/${event.id}`,
