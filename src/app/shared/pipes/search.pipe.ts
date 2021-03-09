@@ -14,13 +14,11 @@ export class SearchPipe implements PipeTransform {
       return items;
     }
     const filterText: string = args[0].toLowerCase();
+    const name: string = args[1];
+    const address: string = args[2];
 
     return items.filter(it => {
-      let item: any = null;
-      
-      //TODO: Filter items accordingly
-
-      return item;
+      return it[name].toLocaleLowerCase().concat(it[address].toLocaleLowerCase()).includes(filterText);
     });
   }
 }
