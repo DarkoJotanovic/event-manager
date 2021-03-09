@@ -28,7 +28,7 @@ $content-bg: map-get($site-colors, grey1);
 .mat-sidenav.sidenav-main {
   position: fixed;
   box-shadow: none;
-  background-color: $sidenav-bg;
+  background-color: blue;
   div.close {
     display: flex;
     flex-direction: row;

@@ -41,7 +41,7 @@ $menu-opacity: 0.8;
     }
     a.active {
       border-left: 3px solid $menu-fg;
-      background-color: darken($menu-bg, 4);
+      background-color: darkblue;
       opacity: 1;
     }
   }
