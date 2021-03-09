@@ -35,6 +35,10 @@
           <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>
         <mat-form-field appearance="fill" class="u-width-100">
+          <mat-label>time</mat-label>
+          <input matInput formControlName="time" type="time" placeholder="Time "/>
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="u-width-100">
           <mat-label>Details</mat-label>
           <textarea #info matInput formControlName="info" [maxlength]="infoMaxLength"></textarea>
           <mat-hint>{{infoMaxLength-(info.value.length)}}</mat-hint>
