@@ -3,12 +3,17 @@ import { Routes, RouterModule } from '@angular/router';
 import { EventListComponent } from './event/event-list/event-list.component';
 import { HomeComponent } from './home/home.component';
 import { EventResolverService } from './services/event.resolver.service';
+import { UserListComponent } from './user/user-list/user-list.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   {
     path: 'home',
     component: HomeComponent,
+  },
+  {
+    path: 'users',
+    component: UserListComponent,
   },
   {
     path: 'events',
